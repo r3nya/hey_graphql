@@ -4,7 +4,7 @@ import {
   GraphQLInt
 } from 'graphql/type';
 
-const count = 0;
+let count = 0;
 
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
@@ -14,6 +14,16 @@ const schema = new GraphQLSchema({
         type: GraphQLInt,
         description: 'the count!',
         resolve: () => count
+      }
+    }
+  }),
+  mutation: new GraphQLObjectType({
+    name: 'RootMutationType',
+    fields: {
+      updateCount: {
+        type: GraphQLInt,
+        description: 'updates the count',
+        resolve: () => count += 1
       }
     }
   })
