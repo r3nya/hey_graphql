@@ -26,4 +26,4 @@ curl -X POST -H 'Content-Type:application/graphql' -d 'mutation RootMutationType
 
 #### PS
 
-Btw, you can use in-browser IDE for exploring GraphQL -> please open [localhost:3000/graphql](http://localhost:3000/graphql) on your browser.
+Btw, you can use in-browser IDE for exploring GraphQL → please open [localhost:3000/graphql](http://localhost:3000/graphql) on your browser. 🤓
